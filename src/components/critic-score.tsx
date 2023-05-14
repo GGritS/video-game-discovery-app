@@ -1,5 +1,5 @@
 import { Badge } from "@chakra-ui/react";
-import React, { FC } from "react";
+import { FC } from "react";
 
 type CriticScoreProps = {
   score: number;

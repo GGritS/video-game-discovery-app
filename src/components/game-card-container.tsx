@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 type GameCardContainerProps = {
   children: ReactNode;
