@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 import bullsEye from "./../assets/bulls-eye.webp";
 import thumbsUp from "./../assets/thumbs-up.webp";

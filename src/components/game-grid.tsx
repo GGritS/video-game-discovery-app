@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useGames } from "../hooks/useGames";
-import { Heading, SimpleGrid, Spinner, Text } from "@chakra-ui/react";
+import { Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { GameCard } from "./game-card";
 import { GameCardSkeleton } from "./game-card-skeleton";
 import { GameCardContainer } from "./game-card-container";
