@@ -4,6 +4,11 @@ export type Platform = {
   slug: string;
 };
 
+export type Publisher = {
+  id: number;
+  name: string;
+};
+
 export type Game = {
   id: number;
   name: string;
@@ -12,6 +17,10 @@ export type Game = {
   metacritic: number;
   rating_top: number;
   rating: number;
+  slug: string;
+  description_raw: string;
+  genres: Genre[];
+  publishers: Publisher[];
 };
 
 export type Genre = {
@@ -23,11 +32,26 @@ export type Genre = {
 export type FetchResponse<T> = {
   count: number;
   results: T[];
+  next: string | null;
+};
+
+export type Trailer = {
+  id: number;
+  name: string;
+  preview: string;
+  data: { 480: string; max: string };
 };
 
 export type GameQuery = {
-  genre: Genre | null;
-  platform: Platform | null;
-  sortOrder: string;
-  searchText: string;
+  genreId?: number;
+  platformId?: number;
+  sortOrder?: string;
+  searchText?: string;
+};
+
+export type Screenshot = {
+  id: number;
+  image: string;
+  width: number;
+  height: number;
 };
